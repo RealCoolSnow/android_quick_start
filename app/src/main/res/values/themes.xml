@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.AndroidTVQuickStart" parent="@style/Theme.Leanback" />
+</resources>
