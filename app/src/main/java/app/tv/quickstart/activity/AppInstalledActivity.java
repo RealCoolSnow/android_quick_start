@@ -8,7 +8,6 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -113,7 +112,6 @@ public class AppInstalledActivity extends BaseActivity {
     }
 
     public List<AppInfo> getInstallApps(Context context) {
-        Log.e(TAG, "getInstallApps0: ");
         PackageManager pm = context.getPackageManager();
         List<PackageInfo> installedPackages = pm.getInstalledPackages(0);  //获取所以已安装的包
 
@@ -136,10 +134,8 @@ public class AppInstalledActivity extends BaseActivity {
                     .FLAG_EXTERNAL_STORAGE;
             info.isUser = (flags & ApplicationInfo.FLAG_SYSTEM) != ApplicationInfo
                     .FLAG_SYSTEM;
-//            Log.e(TAG, "getInstallApps: " + info.toString());
             list.add(info);
         }
-        Log.e(TAG, "getInstallApps1: ");
         return list;
     }
 }
