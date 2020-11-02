@@ -23,7 +23,7 @@
         android:text="Http Test"
         android:textColor="@color/accent"
         android:textSize="@dimen/font_normal"
-        app:layout_constraintBottom_toTopOf="@+id/btn_app_list"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_app_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>

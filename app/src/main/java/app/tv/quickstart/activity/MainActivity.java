@@ -2,6 +2,7 @@ package app.tv.quickstart.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -35,10 +36,12 @@ public class MainActivity extends BaseActivity {
         observable.compose(RxScheduler.compose(this.bindToLifecycle())).subscribe(new BaseObserver<HelloResp>(this) {
             @Override
             protected void onSuccess(String msg, HelloResp data) {
+                Toast.makeText(MainActivity.this, data.toString(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
             protected void onError(int code, String msg) {
+                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
             }
         });
     }
