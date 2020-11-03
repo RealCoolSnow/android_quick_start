@@ -6,12 +6,9 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Bundle;
 import android.text.TextUtils;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.leanback.widget.ArrayObjectAdapter;
 import androidx.leanback.widget.FocusHighlight;
 import androidx.leanback.widget.FocusHighlightHelper;
@@ -21,11 +18,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import app.tv.common.util.FontDisplayUtil;
-import app.tv.quickstart.R;
 import app.tv.quickstart.base.BaseActivity;
 import app.tv.quickstart.bean.AppInfo;
+import app.tv.quickstart.databinding.ActivityAppInstalledBinding;
 import app.tv.quickstart.presenter.AppInstalledPresenter;
-import app.tv.quickstart.widgets.AppVerticalGridView;
 import app.tv.quickstart.widgets.focus.MyItemBridgeAdapter;
 
 /**
@@ -34,26 +30,15 @@ import app.tv.quickstart.widgets.focus.MyItemBridgeAdapter;
  * Created at: 2020/10/30 16:13
  * Description:
  */
-public class AppInstalledActivity extends BaseActivity {
+public class AppInstalledActivity extends BaseActivity<ActivityAppInstalledBinding> {
     private static final String TAG = "AppInstalledActivity";
     private ArrayObjectAdapter mAdapter;
-    private AppVerticalGridView mVgAppInstalled;
-    private TextView mTvAppNumber;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_app_installed);
-        initView();
-        initData();
-    }
-
-    private void initView() {
-        mVgAppInstalled = findViewById(R.id.vg_app_installed);
-        mTvAppNumber = findViewById(R.id.tv_app_installed_number);
-        mVgAppInstalled.setColumnNumbers(6);
-        mVgAppInstalled.setHorizontalSpacing(FontDisplayUtil.dip2px(this, 53));
-        mVgAppInstalled.setVerticalSpacing(FontDisplayUtil.dip2px(this, 20));
+    protected void initView() {
+        binding.vgAppInstalled.setColumnNumbers(6);
+        binding.vgAppInstalled.setHorizontalSpacing(FontDisplayUtil.dip2px(this, 53));
+        binding.vgAppInstalled.setVerticalSpacing(FontDisplayUtil.dip2px(this, 20));
         mAdapter = new ArrayObjectAdapter(new AppInstalledPresenter());
         ItemBridgeAdapter itemBridgeAdapter = new MyItemBridgeAdapter(mAdapter) {
 
@@ -97,9 +82,10 @@ public class AppInstalledActivity extends BaseActivity {
                 };
             }
         };
-        mVgAppInstalled.setAdapter(itemBridgeAdapter);
+        binding.vgAppInstalled.setAdapter(itemBridgeAdapter);
         FocusHighlightHelper.setupBrowseItemFocusHighlight(itemBridgeAdapter,
                 FocusHighlight.ZOOM_FACTOR_MEDIUM, false);
+        initData();
     }
 
     private void initData() {
@@ -107,7 +93,7 @@ public class AppInstalledActivity extends BaseActivity {
         if (appInfos == null) {
             return;
         }
-        mTvAppNumber.setText(String.valueOf(appInfos.size()));
+        binding.tvAppInstalledNumber.setText(String.valueOf(appInfos.size()));
         mAdapter.addAll(0, appInfos);
     }
 
