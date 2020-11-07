@@ -15,4 +15,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_http_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Http Test"
+        android:textColor="@color/accent"
+        android:textSize="@dimen/font_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_app_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>

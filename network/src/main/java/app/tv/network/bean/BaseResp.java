@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName;
  * Created at: 2020/10/30 18:19
  * Description:
  */
-public class Response<T> {
+public class BaseResp<T> {
     @SerializedName("code")
     private int code;
     @SerializedName("msg")
