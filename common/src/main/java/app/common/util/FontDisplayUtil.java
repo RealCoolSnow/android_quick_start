@@ -1,4 +1,4 @@
-package app.tv.common.util;
+package app.common.util;
 
 import android.content.Context;
 

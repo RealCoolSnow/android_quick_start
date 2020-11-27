@@ -1,4 +1,4 @@
-package app.tv.network;
+package app.network;
 
 import com.trello.rxlifecycle3.LifecycleTransformer;
 

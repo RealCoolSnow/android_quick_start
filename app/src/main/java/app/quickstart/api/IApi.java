@@ -1,6 +1,6 @@
 package app.quickstart.api;
 
-import app.tv.network.bean.BaseResp;
+import app.network.bean.BaseResp;
 import app.quickstart.api.bean.resp.HelloResp;
 import io.reactivex.Observable;
 import okhttp3.RequestBody;

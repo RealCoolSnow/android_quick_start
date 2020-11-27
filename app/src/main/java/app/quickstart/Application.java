@@ -3,7 +3,7 @@ package app.quickstart;
 
 import com.orhanobut.logger.Logger;
 
-import app.tv.logger.LoggerConfig;
+import app.logger.LoggerConfig;
 
 public class Application extends android.app.Application {
     @Override

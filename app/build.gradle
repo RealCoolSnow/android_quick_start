@@ -33,7 +33,6 @@ dependencies {
     implementation project(path: ':common')
     implementation project(path: ':network')
     implementation project(path: ':logger')
-    implementation 'androidx.leanback:leanback:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

@@ -1,16 +1,15 @@
 package app.quickstart.activity;
 
-import android.content.Intent;
 import android.widget.Toast;
 
-import app.tv.network.BaseObserver;
-import app.tv.network.RxScheduler;
-import app.tv.network.bean.BaseResp;
 import app.quickstart.api.bean.req.HelloReq;
 import app.quickstart.api.bean.resp.HelloResp;
 import app.quickstart.base.BaseActivity;
 import app.quickstart.databinding.ActivityMainBinding;
 import app.quickstart.network.RetrofitFactory;
+import app.network.BaseObserver;
+import app.network.RxScheduler;
+import app.network.bean.BaseResp;
 import io.reactivex.Observable;
 
 
@@ -18,9 +17,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override
     protected void initView() {
-        binding.btnAppList.setOnClickListener(view -> {
-            startActivity(new Intent(MainActivity.this, AppInstalledActivity.class));
-        });
         binding.btnHttpTest.setOnClickListener(view -> httpTest());
     }
 

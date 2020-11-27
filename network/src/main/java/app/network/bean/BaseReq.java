@@ -1,4 +1,4 @@
-package app.tv.network.bean;
+package app.network.bean;
 
 import com.google.gson.Gson;
 
