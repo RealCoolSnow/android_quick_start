@@ -2,7 +2,6 @@ package app.quickstart.base;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -21,9 +20,6 @@ public abstract class BaseActivity<T extends ViewBinding> extends RxAppCompatAct
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         binding = getBinding();
         setContentView(binding.getRoot());
         initView();
