@@ -3,9 +3,9 @@ package app.quickstart.activity;
 import android.content.Intent;
 import android.widget.Toast;
 
-import app.tv.network.BaseObserver;
-import app.tv.network.RxScheduler;
-import app.tv.network.bean.BaseResp;
+import app.network.BaseObserver;
+import app.network.RxScheduler;
+import app.network.bean.BaseResp;
 import app.quickstart.api.bean.req.HelloReq;
 import app.quickstart.api.bean.resp.HelloResp;
 import app.quickstart.base.BaseActivity;

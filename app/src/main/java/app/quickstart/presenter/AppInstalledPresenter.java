@@ -13,8 +13,8 @@ import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.leanback.widget.Presenter;
 
-import app.tv.common.util.FontDisplayUtil;
-import app.tv.common.util.ImageUtil;
+import app.common.util.FontDisplayUtil;
+import app.common.util.ImageUtil;
 import app.quickstart.R;
 import app.quickstart.bean.AppInfo;
 

@@ -1,6 +1,6 @@
 package app.quickstart.api.bean.req;
 
-import app.tv.network.bean.BaseReq;
+import app.network.bean.BaseReq;
 
 /**
  * File: HelloReq

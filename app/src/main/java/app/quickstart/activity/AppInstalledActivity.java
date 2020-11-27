@@ -17,7 +17,7 @@ import androidx.leanback.widget.ItemBridgeAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.tv.common.util.FontDisplayUtil;
+import app.common.util.FontDisplayUtil;
 import app.quickstart.base.BaseActivity;
 import app.quickstart.bean.AppInfo;
 import app.quickstart.databinding.ActivityAppInstalledBinding;
