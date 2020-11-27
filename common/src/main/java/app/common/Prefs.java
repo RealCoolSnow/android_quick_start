@@ -549,7 +549,7 @@ public final class Prefs {
             if (mMode == -1) {
                 mMode = ContextWrapper.MODE_PRIVATE;
             }
-            app.tv.common.Prefs.initPrefs(mContext, mKey, mMode);
+            Prefs.initPrefs(mContext, mKey, mMode);
         }
     }
 }
