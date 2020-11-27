@@ -1,6 +1,6 @@
 package app.quickstart.api.bean.resp;
 
-import app.tv.network.bean.BaseResp;
+import app.network.bean.BaseResp;
 
 /**
  * File: HelloResp

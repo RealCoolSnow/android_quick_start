@@ -1,4 +1,4 @@
-package app.tv.network.glide;
+package app.network.glide;
 
 import java.security.cert.CertificateException;
 

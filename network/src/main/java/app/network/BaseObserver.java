@@ -1,11 +1,11 @@
-package app.tv.network;
+package app.network;
 
 import android.content.Context;
 import android.widget.Toast;
 
 import com.orhanobut.logger.Logger;
 
-import app.tv.network.bean.BaseResp;
+import app.network.bean.BaseResp;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import retrofit2.HttpException;

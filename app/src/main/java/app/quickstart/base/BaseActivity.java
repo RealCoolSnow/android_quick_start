@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
-import app.tv.common.util.ClassUtil;
+import app.common.util.ClassUtil;
 
 public abstract class BaseActivity<T extends ViewBinding> extends RxAppCompatActivity {
     protected T binding;

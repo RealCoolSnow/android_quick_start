@@ -1,4 +1,4 @@
-package app.tv.common.util;
+package app.common.util;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

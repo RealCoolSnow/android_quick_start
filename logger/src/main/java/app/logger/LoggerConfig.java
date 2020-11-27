@@ -1,4 +1,4 @@
-package app.tv.logger;
+package app.logger;
 
 import android.content.Context;
 
