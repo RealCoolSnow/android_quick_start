@@ -1,4 +1,4 @@
-package app.tv.quickstart.base;
+package app.quickstart.base;
 
 
 import androidx.collection.ArrayMap;

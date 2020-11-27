@@ -1,4 +1,4 @@
-package app.tv.quickstart;
+package app.quickstart;
 
 
 public class Constants {

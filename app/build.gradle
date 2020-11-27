@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "app.tv.quickstart"
+        applicationId "app.quickstart"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

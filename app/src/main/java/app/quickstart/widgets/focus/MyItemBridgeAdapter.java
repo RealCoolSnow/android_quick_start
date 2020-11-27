@@ -1,4 +1,4 @@
-package app.tv.quickstart.widgets.focus;
+package app.quickstart.widgets.focus;
 
 import android.view.View;
 

@@ -1,7 +1,7 @@
-package app.tv.quickstart.api;
+package app.quickstart.api;
 
 import app.tv.network.bean.BaseResp;
-import app.tv.quickstart.api.bean.resp.HelloResp;
+import app.quickstart.api.bean.resp.HelloResp;
 import io.reactivex.Observable;
 import okhttp3.RequestBody;
 import retrofit2.http.Body;

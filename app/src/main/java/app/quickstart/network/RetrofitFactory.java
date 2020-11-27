@@ -1,4 +1,4 @@
-package app.tv.quickstart.network;
+package app.quickstart.network;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import app.tv.quickstart.Constants;
-import app.tv.quickstart.api.IApi;
+import app.quickstart.Constants;
+import app.quickstart.api.IApi;
 import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
 import okhttp3.Cookie;
 import okhttp3.CookieJar;

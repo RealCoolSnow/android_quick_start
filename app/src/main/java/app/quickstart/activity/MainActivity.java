@@ -1,4 +1,4 @@
-package app.tv.quickstart.activity;
+package app.quickstart.activity;
 
 import android.content.Intent;
 import android.widget.Toast;
@@ -6,11 +6,11 @@ import android.widget.Toast;
 import app.tv.network.BaseObserver;
 import app.tv.network.RxScheduler;
 import app.tv.network.bean.BaseResp;
-import app.tv.quickstart.api.bean.req.HelloReq;
-import app.tv.quickstart.api.bean.resp.HelloResp;
-import app.tv.quickstart.base.BaseActivity;
-import app.tv.quickstart.databinding.ActivityMainBinding;
-import app.tv.quickstart.network.RetrofitFactory;
+import app.quickstart.api.bean.req.HelloReq;
+import app.quickstart.api.bean.resp.HelloResp;
+import app.quickstart.base.BaseActivity;
+import app.quickstart.databinding.ActivityMainBinding;
+import app.quickstart.network.RetrofitFactory;
 import io.reactivex.Observable;
 
 

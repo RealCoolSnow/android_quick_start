@@ -1,4 +1,4 @@
-package app.tv.quickstart.presenter;
+package app.quickstart.presenter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,8 +15,8 @@ import androidx.leanback.widget.Presenter;
 
 import app.tv.common.util.FontDisplayUtil;
 import app.tv.common.util.ImageUtil;
-import app.tv.quickstart.R;
-import app.tv.quickstart.bean.AppInfo;
+import app.quickstart.R;
+import app.quickstart.bean.AppInfo;
 
 /**
  * File: AppInstalledPresenter

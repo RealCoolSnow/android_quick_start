@@ -1,4 +1,4 @@
-package app.tv.quickstart.api.bean.req;
+package app.quickstart.api.bean.req;
 
 import app.tv.network.bean.BaseReq;
 

@@ -1,4 +1,4 @@
-package app.tv.quickstart.api.bean.resp;
+package app.quickstart.api.bean.resp;
 
 import app.tv.network.bean.BaseResp;
 

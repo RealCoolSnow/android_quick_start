@@ -1,4 +1,4 @@
-package app.tv.quickstart;
+package app.quickstart;
 
 
 import com.orhanobut.logger.Logger;

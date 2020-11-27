@@ -7,7 +7,7 @@
     android:background="@drawable/bg_gradient_home"
     tools:context=".activity.AppInstalledActivity">
 
-    <app.tv.quickstart.widgets.AppVerticalGridView
+    <app.quickstart.widgets.AppVerticalGridView
         android:id="@+id/vg_app_installed"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

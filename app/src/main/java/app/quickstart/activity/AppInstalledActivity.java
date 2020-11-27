@@ -1,4 +1,4 @@
-package app.tv.quickstart.activity;
+package app.quickstart.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,11 +18,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import app.tv.common.util.FontDisplayUtil;
-import app.tv.quickstart.base.BaseActivity;
-import app.tv.quickstart.bean.AppInfo;
-import app.tv.quickstart.databinding.ActivityAppInstalledBinding;
-import app.tv.quickstart.presenter.AppInstalledPresenter;
-import app.tv.quickstart.widgets.focus.MyItemBridgeAdapter;
+import app.quickstart.base.BaseActivity;
+import app.quickstart.bean.AppInfo;
+import app.quickstart.databinding.ActivityAppInstalledBinding;
+import app.quickstart.presenter.AppInstalledPresenter;
+import app.quickstart.widgets.focus.MyItemBridgeAdapter;
 
 /**
  * File: AppInstalledActivity

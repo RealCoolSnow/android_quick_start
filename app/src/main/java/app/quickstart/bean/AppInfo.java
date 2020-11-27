@@ -1,8 +1,8 @@
-package app.tv.quickstart.bean;
+package app.quickstart.bean;
 
 import android.graphics.drawable.Drawable;
 
-import app.tv.quickstart.Constants;
+import app.quickstart.Constants;
 
 
 public class AppInfo {

@@ -1,4 +1,4 @@
-package app.tv.quickstart.widgets.focus;
+package app.quickstart.widgets.focus;
 
 import android.animation.TimeAnimator;
 import android.content.res.Resources;
@@ -16,7 +16,7 @@ import androidx.leanback.widget.ShadowOverlayContainer;
 import androidx.leanback.widget.ShadowOverlayHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import app.tv.quickstart.R;
+import app.quickstart.R;
 
 import static androidx.leanback.widget.FocusHighlight.ZOOM_FACTOR_LARGE;
 import static androidx.leanback.widget.FocusHighlight.ZOOM_FACTOR_MEDIUM;
