@@ -1,6 +1,13 @@
 include ':umeng'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir,
+  'flutter_lib/.android/include_flutter.groovy'
+))
 include ':logger'
 include ':network'
 include ':common'
 include ':app'
 rootProject.name = "Android-QuickStart"
+
+include ':flutter_lib'
