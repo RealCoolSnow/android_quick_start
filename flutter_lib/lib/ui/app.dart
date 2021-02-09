@@ -10,6 +10,7 @@ import 'dart:io';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_boost/flutter_boost.dart';
 import 'package:flutter_lib/ui/app_theme.dart';
 import 'package:flutter_lib/ui/page/home.dart';
 import 'package:flutter_lib/ui/page/splash_screen.dart';
@@ -38,9 +39,14 @@ class _AppState extends State<App> {
     Pref.setString(PrefKey.launchTime, TimeUtil.format(DateTime.now()));
     //---logutil
     logUtil.setEnabled(Config.debug);
-    FlutterRouter.init();
     logUtil.d("App created");
   }
+  @override
+  void initState() {
+    super.initState();
+    FlutterRouter.init();
+  }
+
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -53,23 +59,30 @@ class _AppState extends State<App> {
       systemNavigationBarIconBrightness: Brightness.dark,
     ));
     return MaterialApp(
-      title: Config.app,
-      debugShowCheckedModeBanner: false,
-      theme: new ThemeData(
-        primarySwatch: AppTheme.primary,
-        splashColor: AppTheme.splash,
-      ),
-      localizationsDelegates: [
-        const I18nDelegate(),
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
-      supportedLocales: localeUtil.supportedLocales(),
-      onGenerateRoute: Config.router.generator,
-      home: _buildSplashScreen(),
-    );
+        title: Config.app,
+        debugShowCheckedModeBanner: false,
+        theme: new ThemeData(
+          primarySwatch: AppTheme.primary,
+          splashColor: AppTheme.splash,
+        ),
+        localizationsDelegates: [
+          const I18nDelegate(),
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+        ],
+        supportedLocales: localeUtil.supportedLocales(),
+        onGenerateRoute: Config.router.generator,
+        builder: FlutterBoost.init(postPush: _onRoutePushed),
+        home: Container(color: Colors.white));
   }
 
+  void _onRoutePushed(
+    String pageName,
+    String uniqueId,
+    Map<String, dynamic> params,
+    Route<dynamic> route,
+    Future<dynamic> _,
+  ) {}
   _buildSplashScreen() {
     return SplashScreen(
         seconds: 3,

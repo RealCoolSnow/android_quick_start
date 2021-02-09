@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".activity.FlutterNativeActivity" />
 
+
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />

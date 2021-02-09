@@ -116,8 +116,8 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: fa8ab3d02beabe9361345b967ae6d537c77d1be8
-      url: "https://github.com/alibaba/flutter_boost.git"
+      resolved-ref: "9fbcad59e25a87374fe1043f452483b5bff8294e"
+      url: "https://github.com/RealCoolSnow/flutter_boost.git"
     source: git
     version: "1.12.13+1"
   flutter_easyloading:

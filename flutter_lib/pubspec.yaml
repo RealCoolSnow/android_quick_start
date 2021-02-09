@@ -32,7 +32,7 @@ dependencies:
   # route - https://github.com/theyakka/fluro
   fluro: ^1.7.6
   # https://github.com/flutter/plugins/tree/master/packages/shared_preferences/shared_preferences
-  shared_preferences: ^0.5.10
+  shared_preferences: '>=0.5.0+x <2.0.0'
   # logger - https://github.com/leisim/logger
   logger: ^0.9.2
   # toast - https://github.com/PonnamKarthik/FlutterToast
@@ -51,7 +51,7 @@ dependencies:
   flutter_easyloading: ^2.0.0
   flutter_boost:
     git:
-        url: 'https://github.com/alibaba/flutter_boost.git'
+        url: 'https://github.com/RealCoolSnow/flutter_boost.git'
 
 dev_dependencies:
   flutter_test:
